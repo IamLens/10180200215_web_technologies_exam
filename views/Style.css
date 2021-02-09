@@ -1,0 +1,82 @@
+nav ul li a {
+    color: rgb(242, 247, 247) !important; 
+    font-weight: bold;
+    text-decoration: none;
+    }
+    
+    nav ul, nav {
+    display: flex;
+    color: rgb(242, 247, 247) !important; 
+
+    }
+    
+    nav ul{
+        list-style: none;
+        justify-content: space-evenly; 
+        width: 100%; 
+       
+
+    }
+    
+    #mainSection{
+        display: flex;
+        color: rgb(0, 0, 0);
+        justify-content: space-evenly;
+        
+    }
+    #featuresSection{
+        background-color: black;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+
+    #divSection{
+        display: flex;
+        justify-content: space-evenly;
+        color: rgb(236, 236, 236);
+       
+    }
+    body{
+        background-color: rgb(22, 15, 15);
+        
+        
+    } 
+    #subSection{
+        display: flex;
+        color: rgb(0, 0, 0);
+    }
+    #subSectionII{
+        display: flex;
+        background-color: black;
+        color:white
+    }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+        
+      }
+      
+      .price {
+        color: grey;
+        font-size: 22px;
+      }
+      
+      .card button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+      
+      .card button:hover {
+        opacity: 0.7;
+      }
+    
