@@ -1,7 +1,6 @@
 
 const express = require ('express');
 var mongoose = require ('mongoose');
-const { collection } = require('./models/gatherComplaint');
 const gatherComplaint = require ('./models/gatherComplaint');
 
 const index = express();
@@ -20,9 +19,6 @@ index.get('/index',(req, res)=>{
     res.render('index.ejs')
 })
 
-index.get('/data',(req, res)=>{
-    res.render('data.ejs')
-})
 
 index.get('/complaints',(req, res)=>{
     res.render('complaints.ejs')
@@ -53,15 +49,6 @@ index.post('/complaints', (req, res)=>{
     res.render('complaints.ejs', {});
 });
 
-index.get('/data', (req, res)=>{
-    //res.render('display.ejs', {});
-
-    collectionComplaint.find({}, function(err, Complaints){
-    res.render('data.ejs', {
-        gatherComplaint: Complaints
-    }) 
-    })
-});
 
 mongoose.connect('mongodb+srv://acity:webtech@exams.xrbci.mongodb.net/likem', {
   useNewUrlParser: true,
@@ -74,3 +61,5 @@ mongoose.connect('mongodb+srv://acity:webtech@exams.xrbci.mongodb.net/likem', {
         console.log('error');
 })
 index.listen(8080)
+
+
